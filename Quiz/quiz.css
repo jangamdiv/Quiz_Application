@@ -1,0 +1,136 @@
+*
+{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+    font-family: "Arvo", serif;
+    font-weight: 300;
+    /* font-style: normal; */
+}
+body
+{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    border-bottom: 5px solid rgba(192, 192, 192, 0.146);
+
+}
+
+main
+{
+    display: grid;
+    grid-template-columns: 35% 35% 30%;
+}
+#ques-cont
+{
+    padding-top: 0.2rem;
+    padding-left: 1rem;
+border-right: 2px solid rgba(192, 192, 192, 0.26);
+}
+
+#ques-cont>h2
+{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+
+#actual-ques
+{
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+#option-cont
+{
+    padding: 0.2rem 1rem;
+}
+
+#btn-cont
+{
+padding: 0.2rem 1rem;
+background-color: rgba(245, 222, 179, 0.685);
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+
+#legends
+{
+    display: grid;
+   grid-template-columns: repeat(2,50%);
+}
+#legends>h3>span
+{
+    margin-right: 0.5rem;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 90% 20%;
+    border-top: 3px solid rgba(192, 192, 192, 0.26);
+    padding: 0.5rem 1rem;
+}
+
+footer button
+{
+    padding: 1rem;
+    border: none;
+    background-color: plum  ;
+    color: white;
+    margin-left: 0.5rem;
+    border-radius: 5px;
+}
+footer button:active
+{
+    background-color: black;
+    cursor: pointer;
+}
+
+#actual-btn
+{
+    display: grid;
+    grid-template-columns: repeat(4,17%);
+   gap: 1rem;
+   margin-bottom: 2rem ;
+   margin-top: 2rem;
+}
+
+#actual-btn>button
+{
+    padding: 0.5rem;
+    bottom: none;
+    background-color: white;
+    border-radius: 5px;
+
+}
+#actual-btn>button:active
+{
+    background-color: black;
+    color: wheat;
+}
+
+#actual-option
+{
+    
+    display: grid;
+    grid-template-columns: repeat(2,10%);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#actual-option>input
+{
+    height: 1rem;
+}
+
+header>.fa-rocket
+{
+    margin-left:20%;
+}
